@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		863166F72B4F1E1F005E2BA7 /* BreezyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863166F62B4F1E1F005E2BA7 /* BreezyApp.swift */; };
+		863166F92B4F1E1F005E2BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863166F82B4F1E1F005E2BA7 /* ContentView.swift */; };
+		863166FB2B4F1E20005E2BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863166FA2B4F1E20005E2BA7 /* Assets.xcassets */; };
+		863166FE2B4F1E20005E2BA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863166FD2B4F1E20005E2BA7 /* Preview Assets.xcassets */; };
+		864B78962BBD2E0B002E4917 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B78952BBD2E0B002E4917 /* SplashScreenView.swift */; };
+		864CBA792BC649E40080B5EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA782BC649E40080B5EA /* LoginView.swift */; };
+		864CBA7B2BC64D510080B5EA /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA7A2BC64D510080B5EA /* InputView.swift */; };
+		864CBA7D2BC654C90080B5EA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA7C2BC654C90080B5EA /* RegistrationView.swift */; };
+		864CBA7F2BC6609E0080B5EA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA7E2BC6609E0080B5EA /* ProfileView.swift */; };
+		864CBA812BC662960080B5EA /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA802BC662960080B5EA /* SettingsRowView.swift */; };
+		864CBA832BC6646E0080B5EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA822BC6646E0080B5EA /* User.swift */; };
+		864CBA852BC669C90080B5EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 864CBA842BC669C90080B5EA /* GoogleService-Info.plist */; };
+		864CBA882BC66CBC0080B5EA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 864CBA872BC66CBC0080B5EA /* FirebaseAuth */; };
+		864CBA8A2BC66CBC0080B5EA /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 864CBA892BC66CBC0080B5EA /* FirebaseFirestoreCombine-Community */; };
+		864CBA8C2BC66CBC0080B5EA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 864CBA8B2BC66CBC0080B5EA /* FirebaseFirestoreSwift */; };
+		864CBA902BC66D3D0080B5EA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA8F2BC66D3D0080B5EA /* AuthViewModel.swift */; };
+		864CBA932BC706500080B5EA /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA922BC706500080B5EA /* ViewA.swift */; };
+		864CBA952BC7065F0080B5EA /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA942BC7065F0080B5EA /* ViewB.swift */; };
+		864CBA972BC706660080B5EA /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA962BC706660080B5EA /* ViewC.swift */; };
+		864CBA992BC709C90080B5EA /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA982BC709C90080B5EA /* HomeScreenView.swift */; };
+		864CBA9B2BCF055F0080B5EA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA9A2BCF055F0080B5EA /* WeatherData.swift */; };
+		864CBA9E2BCF20170080B5EA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA9D2BCF20170080B5EA /* LocationManager.swift */; };
+		864CBAA02BCF80F70080B5EA /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBA9F2BCF80F70080B5EA /* WeatherManager.swift */; };
+		864CBAA22BCF872A0080B5EA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBAA12BCF872A0080B5EA /* ModelData.swift */; };
+		864CBAA42BCF87770080B5EA /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 864CBAA32BCF87770080B5EA /* weatherData.json */; };
+		864CBAA62BCF89430080B5EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBAA52BCF89430080B5EA /* Extensions.swift */; };
+		864CBAA82BCF89EF0080B5EA /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBAA72BCF89EF0080B5EA /* WeatherRow.swift */; };
+		864CBAAA2BCF8D1B0080B5EA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBAA92BCF8D1B0080B5EA /* WelcomeView.swift */; };
+		864CBAAC2BCF8D570080B5EA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CBAAB2BCF8D570080B5EA /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		863166F32B4F1E1F005E2BA7 /* Breezy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breezy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		863166F62B4F1E1F005E2BA7 /* BreezyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreezyApp.swift; sourceTree = "<group>"; };
+		863166F82B4F1E1F005E2BA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		863166FA2B4F1E20005E2BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		863166FD2B4F1E20005E2BA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		864B78952BBD2E0B002E4917 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		864CBA782BC649E40080B5EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		864CBA7A2BC64D510080B5EA /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		864CBA7C2BC654C90080B5EA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		864CBA7E2BC6609E0080B5EA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		864CBA802BC662960080B5EA /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		864CBA822BC6646E0080B5EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		864CBA842BC669C90080B5EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		864CBA8F2BC66D3D0080B5EA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		864CBA922BC706500080B5EA /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
+		864CBA942BC7065F0080B5EA /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
+		864CBA962BC706660080B5EA /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
+		864CBA982BC709C90080B5EA /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		864CBA9A2BCF055F0080B5EA /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		864CBA9D2BCF20170080B5EA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		864CBA9F2BCF80F70080B5EA /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		864CBAA12BCF872A0080B5EA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		864CBAA32BCF87770080B5EA /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		864CBAA52BCF89430080B5EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		864CBAA72BCF89EF0080B5EA /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		864CBAA92BCF8D1B0080B5EA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		864CBAAB2BCF8D570080B5EA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		864CBAAD2BD042110080B5EA /* Breezy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Breezy.entitlements; sourceTree = "<group>"; };
+		86D0CA502B7D3FAE002385F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		863166F02B4F1E1F005E2BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864CBA882BC66CBC0080B5EA /* FirebaseAuth in Frameworks */,
+				864CBA8A2BC66CBC0080B5EA /* FirebaseFirestoreCombine-Community in Frameworks */,
+				864CBA8C2BC66CBC0080B5EA /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		863166EA2B4F1E1F005E2BA7 = {
+			isa = PBXGroup;
+			children = (
+				863166F52B4F1E1F005E2BA7 /* Breezy */,
+				863166F42B4F1E1F005E2BA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		863166F42B4F1E1F005E2BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				863166F32B4F1E1F005E2BA7 /* Breezy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		863166F52B4F1E1F005E2BA7 /* Breezy */ = {
+			isa = PBXGroup;
+			children = (
+				864CBAAD2BD042110080B5EA /* Breezy.entitlements */,
+				864CBA9C2BCF1FF90080B5EA /* Managers */,
+				86436A8E2B8FB56700426BF5 /* App */,
+				86436A8D2B8FB56600426BF5 /* Components */,
+				86436A8C2B8FB56300426BF5 /* Core */,
+				86436A892B8FB55500426BF5 /* Model */,
+				86D0CA502B7D3FAE002385F2 /* Info.plist */,
+				863166FA2B4F1E20005E2BA7 /* Assets.xcassets */,
+				864CBA842BC669C90080B5EA /* GoogleService-Info.plist */,
+				863166FC2B4F1E20005E2BA7 /* Preview Content */,
+				864CBAA52BCF89430080B5EA /* Extensions.swift */,
+			);
+			path = Breezy;
+			sourceTree = "<group>";
+		};
+		863166FC2B4F1E20005E2BA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				863166FD2B4F1E20005E2BA7 /* Preview Assets.xcassets */,
+				864CBAA12BCF872A0080B5EA /* ModelData.swift */,
+				864CBAA32BCF87770080B5EA /* weatherData.json */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86436A892B8FB55500426BF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA822BC6646E0080B5EA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86436A8C2B8FB56300426BF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA762BC6492D0080B5EA /* Authentication */,
+				864CBA772BC6493F0080B5EA /* Profile */,
+				86436A8F2B8FBC7900426BF5 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		86436A8D2B8FB56600426BF5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA7A2BC64D510080B5EA /* InputView.swift */,
+				864CBA802BC662960080B5EA /* SettingsRowView.swift */,
+				864CBA922BC706500080B5EA /* ViewA.swift */,
+				864CBA942BC7065F0080B5EA /* ViewB.swift */,
+				864CBA962BC706660080B5EA /* ViewC.swift */,
+				864CBAA72BCF89EF0080B5EA /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86436A8E2B8FB56700426BF5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				863166F62B4F1E1F005E2BA7 /* BreezyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		86436A8F2B8FBC7900426BF5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				863166F82B4F1E1F005E2BA7 /* ContentView.swift */,
+				864B78952BBD2E0B002E4917 /* SplashScreenView.swift */,
+				864CBA982BC709C90080B5EA /* HomeScreenView.swift */,
+				864CBAA92BCF8D1B0080B5EA /* WelcomeView.swift */,
+				864CBAAB2BCF8D570080B5EA /* LoadingView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		864CBA762BC6492D0080B5EA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA8D2BC66CF40080B5EA /* View */,
+				864CBA8E2BC66D000080B5EA /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		864CBA772BC6493F0080B5EA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA7E2BC6609E0080B5EA /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		864CBA8D2BC66CF40080B5EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA782BC649E40080B5EA /* LoginView.swift */,
+				864CBA7C2BC654C90080B5EA /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		864CBA8E2BC66D000080B5EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA8F2BC66D3D0080B5EA /* AuthViewModel.swift */,
+				864CBA9A2BCF055F0080B5EA /* WeatherData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		864CBA9C2BCF1FF90080B5EA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				864CBA9D2BCF20170080B5EA /* LocationManager.swift */,
+				864CBA9F2BCF80F70080B5EA /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		863166F22B4F1E1F005E2BA7 /* Breezy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863167012B4F1E20005E2BA7 /* Build configuration list for PBXNativeTarget "Breezy" */;
+			buildPhases = (
+				863166EF2B4F1E1F005E2BA7 /* Sources */,
+				863166F02B4F1E1F005E2BA7 /* Frameworks */,
+				863166F12B4F1E1F005E2BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Breezy;
+			packageProductDependencies = (
+				864CBA872BC66CBC0080B5EA /* FirebaseAuth */,
+				864CBA892BC66CBC0080B5EA /* FirebaseFirestoreCombine-Community */,
+				864CBA8B2BC66CBC0080B5EA /* FirebaseFirestoreSwift */,
+			);
+			productName = Breezy;
+			productReference = 863166F32B4F1E1F005E2BA7 /* Breezy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		863166EB2B4F1E1F005E2BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					863166F22B4F1E1F005E2BA7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 863166EE2B4F1E1F005E2BA7 /* Build configuration list for PBXProject "Breezy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 863166EA2B4F1E1F005E2BA7;
+			packageReferences = (
+				864CBA862BC66CBC0080B5EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 863166F42B4F1E1F005E2BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				863166F22B4F1E1F005E2BA7 /* Breezy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		863166F12B4F1E1F005E2BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863166FE2B4F1E20005E2BA7 /* Preview Assets.xcassets in Resources */,
+				863166FB2B4F1E20005E2BA7 /* Assets.xcassets in Resources */,
+				864CBAA42BCF87770080B5EA /* weatherData.json in Resources */,
+				864CBA852BC669C90080B5EA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863166EF2B4F1E1F005E2BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864CBA7F2BC6609E0080B5EA /* ProfileView.swift in Sources */,
+				864CBA9B2BCF055F0080B5EA /* WeatherData.swift in Sources */,
+				864CBAA02BCF80F70080B5EA /* WeatherManager.swift in Sources */,
+				864CBAAC2BCF8D570080B5EA /* LoadingView.swift in Sources */,
+				864B78962BBD2E0B002E4917 /* SplashScreenView.swift in Sources */,
+				863166F92B4F1E1F005E2BA7 /* ContentView.swift in Sources */,
+				864CBA9E2BCF20170080B5EA /* LocationManager.swift in Sources */,
+				864CBA7D2BC654C90080B5EA /* RegistrationView.swift in Sources */,
+				864CBAA62BCF89430080B5EA /* Extensions.swift in Sources */,
+				864CBA7B2BC64D510080B5EA /* InputView.swift in Sources */,
+				864CBA992BC709C90080B5EA /* HomeScreenView.swift in Sources */,
+				864CBA792BC649E40080B5EA /* LoginView.swift in Sources */,
+				864CBA902BC66D3D0080B5EA /* AuthViewModel.swift in Sources */,
+				864CBAA22BCF872A0080B5EA /* ModelData.swift in Sources */,
+				864CBAAA2BCF8D1B0080B5EA /* WelcomeView.swift in Sources */,
+				863166F72B4F1E1F005E2BA7 /* BreezyApp.swift in Sources */,
+				864CBA832BC6646E0080B5EA /* User.swift in Sources */,
+				864CBAA82BCF89EF0080B5EA /* WeatherRow.swift in Sources */,
+				864CBA952BC7065F0080B5EA /* ViewB.swift in Sources */,
+				864CBA932BC706500080B5EA /* ViewA.swift in Sources */,
+				864CBA972BC706660080B5EA /* ViewC.swift in Sources */,
+				864CBA812BC662960080B5EA /* SettingsRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		863166FF2B4F1E20005E2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		863167002B4F1E20005E2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		863167022B4F1E20005E2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Breezy/Breezy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Breezy/Preview Content\"";
+				DEVELOPMENT_TEAM = P794X2R56C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Breezy/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide current Weather information";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide current Weather information";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FanAutomationKit.Breezy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		863167032B4F1E20005E2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Breezy/Breezy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Breezy/Preview Content\"";
+				DEVELOPMENT_TEAM = P794X2R56C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Breezy/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide current Weather information";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide current Weather information";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FanAutomationKit.Breezy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		863166EE2B4F1E1F005E2BA7 /* Build configuration list for PBXProject "Breezy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863166FF2B4F1E20005E2BA7 /* Debug */,
+				863167002B4F1E20005E2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863167012B4F1E20005E2BA7 /* Build configuration list for PBXNativeTarget "Breezy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863167022B4F1E20005E2BA7 /* Debug */,
+				863167032B4F1E20005E2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		864CBA862BC66CBC0080B5EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		864CBA872BC66CBC0080B5EA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 864CBA862BC66CBC0080B5EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		864CBA892BC66CBC0080B5EA /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 864CBA862BC66CBC0080B5EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		864CBA8B2BC66CBC0080B5EA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 864CBA862BC66CBC0080B5EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 863166EB2B4F1E1F005E2BA7 /* Project object */;
+}
